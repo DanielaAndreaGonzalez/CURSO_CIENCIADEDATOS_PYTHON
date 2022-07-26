@@ -1,0 +1,126 @@
+body{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  background: #F9c2c5;
+}
+
+input[type='ckeckbox'],
+input[type='reset']{
+    display: none;
+}
+
+form {
+    margin: 20 px;
+}
+
+label {
+    position: absolute;
+    opacity: 0;
+}
+
+.doll {
+    width: 100px;
+    height: 100px;
+}
+
+.doll0 {
+    width: 100px;
+    height: 200px;
+    z-index: 4;
+}
+
+.doll1 {
+    width: 100px;
+    height: 200px;
+    z-index: 3;
+}
+
+.doll2 {
+    width: 100px;
+    height: 200px;
+    z-index: 2;
+}
+
+.doll3 {
+    width: 40px;
+    height: 80px;
+    z-index: 1;
+}
+
+.doll__body {
+    width: 100%;
+    height: 30%;
+}
+
+.doll--top img {
+    width: 100px;
+}
+
+.doll--bottom img {
+    width: 100%;
+}
+
+.doll--top{
+    background: hotpink;
+}
+
+.doll--bottom {
+    background: papayawhip;
+}
+
+input:checked + label .doll--top {
+    animation: up 0.3s forwards;
+}
+
+@keyframes up {
+    form { transform: translateY(0);}
+    to { transform: translateY(-100%);
+    }
+}
+
+input:checked + label .doll--bottom {
+    animation: down 0.3s forwards;
+}
+
+@keyframes down {
+    from { transform: translateY(0);}
+    to { transform: translateY(100%);}
+}
+
+form input:nth-child(1):checked + label + input + label {
+    opacity: 1;
+    animation: move1 0.3s forwards;
+}
+
+@keyframes move1 {
+    from { transform: translateX(0);}
+    to {transform: translateX(100px);}
+}
+
+form input:nth-child(3):checked + label + input + label {
+    opacity: 1;
+    animation: move2 0.3s forwards;
+}
+@keyframes move2 {
+    from {transform: translateX(100px);}
+    to {transform: translateX(200px);}
+}
+
+
+form input:nth-child(5):checked + label + input + label {
+    opacity: 1;
+    animation: move3 0.3s forwards;
+}
+@keyframes move3 {
+    from {transform: translateX(200px);}
+    to {transform: translateX(300px);}
+
+}
+a {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
