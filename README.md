@@ -2,8 +2,8 @@
 Curso ciencia de datos con python 
 
 
-<img src="
-<img src="https://publicdomainvectors.org/photos/Rocket11.png" width="100" alt="accessibility text">" width="100" alt="accessibility text">
+
+<img src="https://educacion-ejecutiva.utec.edu.pe/sites/default/files/blog/ds4b-blog-cabecera.jpg" width="100" alt="accessibility text">" width="100" alt="accessibility text">
 
 
 La ciencia de datos es un campo interdisciplinario que involucra métodos científicos, procesos y sistemas para extraer conocimiento
